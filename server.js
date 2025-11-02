@@ -36,10 +36,12 @@ try {
     if (!FIREBASE_SERVICE_ACCOUNT_PATH) {
         throw new Error("FIREBASE_SERVICE_ACCOUNT_PATH is not defined in .env");
     }
-    const serviceAccount = require(FIREBASE_SERVICE_ACCOUNT_PATH);
-    admin.initializeApp({
-        credential: admin.credential.cert(serviceAccount)
-    });
+    const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
+
+    admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount),
+    });
+
     isFirebaseInitialized = true;
     console.log('Firebase Admin SDK initialized successfully.');
 } catch (error) {
