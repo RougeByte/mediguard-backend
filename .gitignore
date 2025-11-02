@@ -1,0 +1,107 @@
+######################################################################
+# 🚫  SENSITIVE FILES & CONFIGURATION (NEVER COMMIT)
+######################################################################
+
+# Environment variables
+.env
+
+# Firebase Service Account Key (for FCM or Google APIs)
+mediguard-project-service-account.json
+
+# Local Node.js configurations
+.npmrc
+.nvmrc
+
+######################################################################
+# 📦  NODE.JS DEPENDENCIES & LOGS
+######################################################################
+
+# Dependencies
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+######################################################################
+# 🧠  PYTHON / AI SERVICE DEPENDENCIES & CACHE
+######################################################################
+
+# Virtual environments
+venv/
+*/venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Testing cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+######################################################################
+# 🏗️  BUILD & DISTRIBUTION ARTIFACTS
+######################################################################
+
+# Build output
+build/
+dist/
+
+# Packaged archives
+*.zip
+*.tar
+*.tgz
+*.gz
+
+######################################################################
+# 🧾  LOGS & RUNTIME DATA
+######################################################################
+
+logs/
+*.log
+*.out
+*.err
+*.pid
+
+######################################################################
+# 💻  SYSTEM & IDE FILES
+######################################################################
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# VS Code / JetBrains / Eclipse
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+*.swp
+*.swo
+
+######################################################################
+# 🧪  TEST / MISCELLANEOUS
+######################################################################
+
+# Temporary or test files
+tmp/
+temp/
+.cache/
+.tox/
+.mypy_cache/
+
+######################################################################
+# ✅  END OF FILE
+######################################################################
+
+ai-model-service/
+
